@@ -1,0 +1,53 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book inventory App</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/ff14b1909b.js" crossorigin="anonymous"></script>
+    <script type="module" defer src="script.js"></script>    
+    
+</head>
+<body>
+    <article class="container">
+        <aside class="books__header">
+            <h1>Booktory</h1>
+        </aside>
+        
+        <main class="books__container">      
+            <section class="books">
+                <ul id="list-container">        
+                    <li class="books__item">
+                        <img src="https://m.media-amazon.com/images/I/51p+yiLxdfS._SY445_SX342_.jpg">
+                        <div class="books__description">
+                            <h3 class="books__item__title">One Hundred Years of Solitude</h3>
+                            <h4 class="books__item__author">Gabriel Garcia Marquez</h2>
+                            <h6 class="books__item__stock">Out Of Stock</h6>
+                            <p class="books__item__price">$24.99</p>
+        <i class="fa-solid fa-trash-can" id="trash-can"></i>
+                        </div>
+                        
+                    </li></ul>
+                
+            </section>
+        </main>
+        
+        <aside class="aside-b">
+    <form action="" class="submit-box">
+        <input type="text" class="submit-box__input-box" id="title" placeholder="Title" required>
+        <input type="text" class="submit-box__input-box" id="author" placeholder="Author" required>
+        <input type="text" class="submit-box__input-box" id="image-URL" placeholder="Image URL" required>
+        <input type="text" class="submit-box__input-box" id="price" placeholder="Price" required>
+
+<select class="submit-box__input-box" id="stock">
+    <option value="In Stock">In Stock</option>
+    <option value="Out of Stock">Out of Stock</option>
+</select>
+<button class="submit-box__btn">Add Book</button>
+<p class="success-text">Book added successfully!!!</p>
+</aside>
+</article>
+</body>
+</html>
